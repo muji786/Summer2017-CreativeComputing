@@ -15,5 +15,10 @@ This is the actual fritzing file:
 
 [Assignment1.fzz](https://github.com/muji786/Summer2017-CreativeComputing/blob/master/Assignment1/Assignment1.fzz?raw=true)
 
-Hopefully I will be ready to rumble in the next class.
+Hopefully I will be ready to rumble with the actual physical Arduino in the next class.
 
+As far as conductive material goes, there is no shortage of them: [Conductive Materials](https://www.google.com/search?q=list+of+conductive+materials&newwindow=1&stick=H4sIAAAAAAAAAONgfcS4i5Fb4OWPe8JSGxgnrTl5jXElI5eAT35-cWpOZVBqTmJJakpIvpAaF5trXklmSaWQDBevFKd-rr6BYbJ5hbEGgxQ3F4IrlMvFHZxaEpLvm5-SmVYpFCcUw8Xpm5qblFpU7J8m5M_F5Zyfk5OaXJKZnydkwiUpJaqfDBfQzwVaVpSZmFMMNFWcC7uUFLcVJ5zDAwANdfLqwAAAAA&source=lnms&tbm=isch&sa=X&ved=0ahUKEwihn8y-4oHVAhUEbT4KHfHgDCAQ_AUIBygC&biw=1920&bih=960#newwindow=1&tbm=isch&q=conductive+materials&search_plus_one=form)
+
+I for one, will be using a sandwich wrapper sheet that comes with my daily Tunisian Tuna sandwich from NOHO Juicebar.
+
+![Sandwich Wrapper](http://www.uscasehouse.com/media/catalog/product/cache/1/image/940x587/9df78eab33525d08d6e5fb8d27136e95/1/4/1450XX_11.JPG)

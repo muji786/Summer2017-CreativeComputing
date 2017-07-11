@@ -9,11 +9,11 @@ I reviewed the wrangling electrons post that would help creating a circuit. Unfo
 
 So, it gave me a nice chance to install and play with fritzing app (http://fritzing.org/). They seem to have a really slow server so I decided to download, compile and install from source which was a troubling task, considering they use QT and many other libraries that had to be compiled separately. Anyone, interested, can try to follow it at: [https://github.com/fritzing/fritzing-app/wiki] (https://github.com/fritzing/fritzing-app/wiki). I feel pretty good about developing a circuit on it. For a new user, it can be a bit overwhelming with so many options. I was a bit disappointed not see a simulator. I need to ask Scott if there is a different service that could test fritzing breadboards/schemas. Anyways, here is what I got:
 
-![Assignment1](https://raw.githubusercontent.com/muji786/Summer2017-CreativeComputing/master/Assignment1/Assignment1.png)
+![Assignment1](https://github.com/muji786/Summer2017-CreativeComputing/blob/master/Assignment1/Assignment1.png?raw=true)
 
 This is the actual fritzing file:
 
-[Assignment1.fzz](Summer2017-CreativeComputing/Assignment1/Assignment1.fzz)
+[Assignment1.fzz](https://github.com/muji786/Summer2017-CreativeComputing/blob/master/Assignment1/Assignment1.fzz?raw=true)
 
 Hopefully I will be ready to rumble in the next class.
 

@@ -1,14 +1,1 @@
-name: "Creative Computing"
-navbar:
-  title: "Home"
-  left:
-  - text: "Home"
-      href: index.html
-    - text: "Assignment1"
-      href: /Assignment1.md
-output_dir: "."
-output:
-  html_document:
-    theme: cosmo
-    highlight: textmate
 

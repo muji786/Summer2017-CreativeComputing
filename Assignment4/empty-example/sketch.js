@@ -1,36 +1,51 @@
-var HappyFace = function (_x, _y) {
+var HappyFace = function (_x, _y, _rad, _r, _g, _b) {
     this.x = _x;
     this.y = _y;
 
-    this.xdir = random(-1, 1);
-    this.ydir = random(-1, 1);
+    this.rad = _rad;
+
+    this.r = _r;
+    this.g = _g;
+    this.b = _b;
+
+    this.xdir = random(-3, 3);
+    this.ydir = random(-3, 3);
 
     this.draw = function () { // draw a happy face
-        ellipse(this.x, this.y, 50, 50);
-        ellipse(this.x - 5, this.y - 5, 5, 5);
-        ellipse(this.x + 5, this.y - 5, 5, 5);
-        arc(this.x, this.y + 10, 20, 10, 0, PI, CHORD);
+        fill(this.r, this.g, this.b);
+        ellipse(this.x, this.y, this.rad * 2, this.rad * 2);
+        fill(255);
+        ellipse(this.x - this.rad / 3, this.y - this.rad / 3, this.rad / 3, this.rad / 3);
+        ellipse(this.x + this.rad / 3, this.y - this.rad / 3, this.rad / 3, this.rad / 3);
+        fill(255);
+        arc(this.x, this.y + this.rad / 4, this.rad, this.rad - this.rad / 2, 0, PI, CHORD);
     };
 
     this.move = function () { // move the happy face
         this.x += this.xdir;
         this.y += this.ydir;
 
-        if (this.x <= 25 || this.x >= width - 25) {
+        if (this.x <= this.rad || this.x >= width - this.rad) {
             this.xdir *= -1;
         }
 
-        if (this.y <= 25 || this.y >= height - 25) {
+        if (this.y <= this.rad || this.y >= height - this.rad) {
             this.ydir *= -1;
         }
+    };
 
+    this.collideswith = function (secondface) {
+        var distance = dist(this.x, this.y, secondface.x, secondface.y)
+        if (distance < this.rad + secondface.rad) {
+            return true;
+        } else return false;
     };
 };
 
 var allFaces = [];
 
 function setup() {
-    createCanvas(1024, 700);
+    createCanvas(1400, 700);
 }
 
 function draw() {
@@ -42,11 +57,16 @@ function draw() {
     for (var i = 0; i < allFaces.length; i++) {
         allFaces[i].move();
         allFaces[i].draw();
+        for (var j = 0; j < allFaces.length; j++) {
+            if (i != j && allFaces[i].collideswith(allFaces[j])) {
+                allFaces[j].xdir *= -1;
+                allFaces[j].ydir *= -1;
+            }
+        }
     }
-
 }
 
 function mousePressed() {
-    var aface = new HappyFace(mouseX, mouseY);
+    var aface = new HappyFace(mouseX, mouseY, random(15, 75), random(255), random(255), random(255));
     allFaces.push(aface);
 }

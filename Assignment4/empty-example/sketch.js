@@ -52,7 +52,7 @@ function draw() {
     background(255);
     smooth();
     stroke(0);
-    strokeWeight(3);
+    strokeWeight(0);
     ellipseMode(CENTER);
     for (var i = 0; i < allFaces.length; i++) {
         allFaces[i].move();
@@ -67,6 +67,6 @@ function draw() {
 }
 
 function mousePressed() {
-    var aface = new HappyFace(mouseX, mouseY, random(15, 75), random(255), random(255), random(255));
+    var aface = new HappyFace(mouseX, mouseY, random(15, 75), random(127, 255), random(127, 255), random(127, 255));
     allFaces.push(aface);
 }

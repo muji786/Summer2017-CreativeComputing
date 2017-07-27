@@ -27,6 +27,7 @@ var HappyFace = function (_x, _y, _rad, _r, _g, _b) {
 
         if (this.x <= this.rad || this.x >= width - this.rad) {
             this.xdir *= -1;
+            this.ydir *= this.ydir * 0.2
         }
 
         if (this.y <= this.rad || this.y >= height - this.rad) {

@@ -1,5 +1,5 @@
 var allBalls = [];
-var maxBalls = 2;
+var maxBalls = 5;
 var gameOver = 0;
 
 const LINE_HEIGHT = 250;
@@ -52,9 +52,8 @@ var Balls = function (_x, _y, _rad, _r, _g, _b) {
     };
 };
 
-
 function setup() {
-    createCanvas(1000, 700);
+    createCanvas(1000, 600);
 
     leftLine = height / 2 - LINE_HEIGHT / 2;
     rightLine = height / 2 - LINE_HEIGHT / 2;
@@ -62,7 +61,6 @@ function setup() {
     topLine = width / 2 - LINE_WIDTH / 2;
     bottomLine = width / 2 - LINE_WIDTH / 2;
 }
-
 
 function draw() {
     background(255, 255, 255);
@@ -79,7 +77,6 @@ function draw() {
             }
         }
     }
-
 }
 
 function setupCanvas() {

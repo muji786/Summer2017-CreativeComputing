@@ -19,12 +19,16 @@ void setup() {
   pinMode(greenLED2, OUTPUT);
 
   pinMode(speaker, OUTPUT);
+  
+    digitalWrite(greenLED1, HIGH);
+    digitalWrite(greenLED2, HIGH);
   }
 
 void loop() {
+  
   if (Serial.available() > 0) {//this waits for byte from P5.js
   int input = Serial.read();  // read the input from the buffer
-  Serial.println(input);
+  //Serial.println(input);
   if (input == 1)
   {
     digitalWrite(greenLED1, LOW);
@@ -45,7 +49,7 @@ void loop() {
     digitalWrite(redLED2, HIGH);
     tone(speaker, 523, 500);
     delay(500);
-  } else {
+  } else if (input == 0){
     delay(100);
     digitalWrite(greenLED1, HIGH);
     digitalWrite(greenLED2, HIGH);

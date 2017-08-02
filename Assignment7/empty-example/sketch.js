@@ -38,7 +38,8 @@ function draw() {
         serial.write(1);
         console.log('Movement Detected... ' + movement);
         movement = 0;
-    }
+    } else
+        serial.write(0);
 }
 
 //function draw() {

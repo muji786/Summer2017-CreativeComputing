@@ -16,14 +16,12 @@ var HappyFace = function (_x, _y, _rad, _r, _g, _b) {
         ellipseMode(CENTER);
         ellipse(this.x, this.y, this.rad * 2);
         if (mood == "happy") {
-            stroke(3);
             fill(255);
             ellipse(this.x - this.rad / 3, this.y - this.rad / 3, this.rad / 3);
             ellipse(this.x + this.rad / 3, this.y - this.rad / 3, this.rad / 3);
             arc(this.x, this.y + this.rad / 4, this.rad, this.rad - this.rad / 2, 0, PI, CHORD);
         }
         if (mood == "sad") {
-            stroke(3);
             fill(255);
             rect(this.x - this.rad / 2, this.y - this.rad / 3, this.rad / 3, this.rad / 5);
             rect(this.x + this.rad / 4, this.y - this.rad / 3, this.rad / 3, this.rad / 5);
